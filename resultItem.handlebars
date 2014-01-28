@@ -1,0 +1,93 @@
+<li>
+  <h2>{{this.name}}</h2>
+  <table>
+    <tr>
+      <th scope="row">Department</th>
+      <td>
+        {{#with (facet name="Department")}}
+          <a href="#" class="webkite-add-filter" data-facet="{{this.id}}" data-operator="like" data-value="{{this.text}}">{{this.displayValue}}</a>
+        {{/with}}
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Role</th>
+      <td>
+        {{#with (facet name="Title/Role")}}
+          {{this.displayValue}}
+        {{/with}}
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Email</th>
+      <td>
+        {{#with (facet name="Email")}}
+          <a href="mailto:{{this.text}}">{{this.displayValue}}</a>
+        {{/with}}
+      </td>
+    </tr>
+  </table>
+  <a href="#{{this.id}}" data-id={{this.id}} class="webkite-toggle-item">More</a>
+  <div id={{this.id}} class="webkite-item-details">
+    <table>
+      <tr>
+        <th scope="row">Office</th>
+        <td>
+          {{#with (facet name="Office")}}
+            {{this.displayValue}}
+          {{/with}}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Phone</th>
+        <td>
+          {{#with (facet name="Number")}}
+            {{this.displayValue}}
+          {{/with}}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Emergency Contact</th>
+        <td>
+          {{#with (facet name="Emergency Contact")}}
+            {{this.displayValue}}
+          {{/with}}
+          {{#with (facet name="Emergency Contact Number")}}
+            ({{this.displayValue}})
+          {{/with}}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Personal Email</th>
+        <td>
+          {{#with (facet name="Personal Email")}}
+            <a href="mailto:{{this.text}}">{{this.displayValue}}</a>
+          {{/with}}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Home Address</th>
+        <td>
+          {{#with (facet name="home address")}}
+            {{this.displayValue}}
+          {{/with}}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Birthday</th>
+        <td>
+          {{#with (facet name="Birthday")}}
+            {{this.displayValue}}
+          {{/with}}
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Start Date</th>
+        <td>
+          {{#with (facet name="Start Date")}}
+            {{this.displayValue}}
+          {{/with}}
+        </td>
+      </tr>
+    </table>
+  </div>
+</li>

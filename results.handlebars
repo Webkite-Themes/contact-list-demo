@@ -1,0 +1,9 @@
+<h3>Webkite Employee Directory</h3>
+{{>filters this.filters}}
+{{paginator pagination 5}}
+<ul start={{pagination.firstResult}}>
+  {{#each items}}
+    {{>resultItem this}}
+  {{/each}}
+</ul>
+{{paginator pagination 5}}
