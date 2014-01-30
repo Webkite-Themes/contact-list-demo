@@ -17,6 +17,18 @@ $link: #ffbf00;
   font-family: "Lato","sans-serif";
   background: $bgcolor;
   color: $color;
+  div.webkite-sort {
+    .label {
+      float: left;
+      background: $control;
+      color: $field;
+      border: 2px solid;
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
   a { color: $color; border-color: $field; }
   ul {
     list-style: none;
@@ -34,6 +46,7 @@ $link: #ffbf00;
   .webkite-results-paginator {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: 0;
     a {
       font-size: 16px;
@@ -51,6 +64,7 @@ $link: #ffbf00;
       background: $link;
     }
   }
+  .webkite-item-details { margin-top: -1em; }
   table {
     th { background: $control; color: $field; border: 1px solid; width: 9em;}
     td {

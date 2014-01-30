@@ -1,4 +1,12 @@
 <h3>Webkite Employee Directory</h3>
+<div class="webkite-sort clearfix">
+  <div class="label">Sort by:</div>
+  <select class="webkite-sort">
+    <option></option>
+    <option value="alphabetical" {{#if (equals sort.currentSort undefined)}}selected{{/if}}>name</option>
+    <option value="Start Date">start date</option>
+  </select>
+</div>
 {{>filters this.filters}}
 {{paginator pagination 5}}
 <ul start={{pagination.firstResult}}>
