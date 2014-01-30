@@ -2,8 +2,8 @@ stylesheets:
   - dark.css
   - light.css
 templates:
-  - results.handlebars
+  - results.handlebars.js
 partials:
-  - paginator.handlebars
-  - resultItem.handlebars
-  - filters.handlebars
+  - paginator.handlebars.js
+  - resultItem.handlebars.js
+  - filters.handlebars.js
