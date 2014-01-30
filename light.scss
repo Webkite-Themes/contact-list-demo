@@ -1,8 +1,8 @@
-$color: #fff;
-$bgcolor: #036;
+$color: #111;
+$bgcolor: #b8daf5;
 $control: #aaa;
-$field: #111;
-$link: #ffbf00;
+$field: #fff;
+$link: #6bb1db;
 @import url(//fonts.googleapis.com/css?family=Lato:400);
 
 #webkite-results {
@@ -17,14 +17,13 @@ $link: #ffbf00;
   font-family: "Lato","sans-serif";
   background: $bgcolor;
   color: $color;
-  a { color: $color; border-color: $field; }
+  a { color: $color; }
   ul {
     list-style: none;
     margin-left: 0;
   }
   .webkite-toggle-item {
-    color: $link;
-    background: $field;
+    background: $control;
     text-decoration: none;
     border: 1px solid;
     padding: 0.5em;
@@ -38,7 +37,6 @@ $link: #ffbf00;
     a {
       font-size: 16px;
       background: $control;
-      color: $field;
       border: 1px solid;
       width: 1.5em;
       height: 1.5em;
@@ -48,13 +46,14 @@ $link: #ffbf00;
       text-decoration: none;
     }
     .webkite-current-page {
-      background: $link;
+      background: #eee;
     }
   }
   table {
-    th { background: $control; color: $field; border: 1px solid; width: 9em;}
+    th { background: $control; border: 1px solid; width: 9em;}
     td {
       background: $field;
+      border: 1px dotted;
       a { color: $link; }
     }
   }
@@ -63,7 +62,6 @@ $link: #ffbf00;
     height: 2em;
     .label {
       background: $control;
-      color: $field;
       border: 2px solid;
       width: 60px;
       position: absolute;
@@ -73,7 +71,7 @@ $link: #ffbf00;
     }
     width: 100%;
     .current-filters {
-      background: $color;
+      background: $field;
       float:right;
       border: 1px dotted;
       border-left: 0px;
@@ -81,7 +79,6 @@ $link: #ffbf00;
       left: 68px;
       width: 80%;
       a {
-        color: $field;
         text-decoration: none;
         background: #eee;
         margin-left: 2px;
@@ -95,7 +92,6 @@ $link: #ffbf00;
           border: 2px solid;
           width: 1.5em;
           background: $control;
-          color: $field;
           text-align: center;
       }
     }

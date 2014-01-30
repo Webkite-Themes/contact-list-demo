@@ -1,4 +1,5 @@
 <li>
+  {{log this}}
   <h2>{{this.name}}</h2>
   <table>
     <tr>
@@ -26,7 +27,6 @@
       </td>
     </tr>
   </table>
-  <a href="#{{this.id}}" data-id={{this.id}} class="webkite-toggle-item">More</a>
   <div id={{this.id}} class="webkite-item-details">
     <table>
       <tr>
@@ -90,4 +90,6 @@
       </tr>
     </table>
   </div>
+  <a href="#{{this.id}}" data-id={{this.id}} class="webkite-toggle-item webkite-toggle more" data-target=".more,.less">More</a>
+  <a href="#{{this.id}}" data-id={{this.id}} class="webkite-toggle-item webkite-toggle less webkite-hide" data-target=".more,.less">Less</a>
 </li>
