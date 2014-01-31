@@ -14,7 +14,7 @@
     <option value="Start Date">start date</option>
   </select>
 </div>
-{{>filters this.filters}}
+{{#if filters.currentFilters}}{{>filters this.filters}}{{/if}}
 {{paginator pagination 5}}
 <ul start={{pagination.firstResult}}>
   {{#each items}}
