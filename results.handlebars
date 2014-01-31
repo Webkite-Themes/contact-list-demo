@@ -2,7 +2,7 @@
 <div class="webkite-sort clearfix">
   <div class="label">Sort by:</div>
   <select class="webkite-sort">
-    <option></option>
+    <option>{{#if (equals this.sort.currentSort "alphabetical")}}name{{else}}{{this.sort.currentSort}}{{/if}}</option>
     <option value="alphabetical" {{#if (equals sort.currentSort undefined)}}selected{{/if}}>name</option>
     <option value="Start Date">start date</option>
   </select>
