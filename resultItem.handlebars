@@ -32,7 +32,7 @@
         <th scope="row">Office</th>
         <td>
           {{#with (facet name="Office")}}
-            {{this.displayValue}}
+            <a href="#" class="webkite-add-filter" data-facet="{{this.id}}" data-operator="like" data-value="{{this.text}}">{{this.displayValue}}</a>
           {{/with}}
         </td>
       </tr>
